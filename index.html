@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>From Reflection to Perfection: Scaling Inference-Time Optimization for Text-to-Image Diffusion Models via Reflection Tuning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,16 +56,34 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://le-zhuo.com/" target="_blank">Le Zhuo</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://liangbingzhao.github.io/" target="_blank">Liangbing Zhao</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://sayak.dev/" target="_blank">Sayak Paul</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://liaoyue.net/" target="_blank">Yue Liao</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://zrrskywalker.github.io/" target="_blank">Renrui Zhang</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://synbol.github.io/" target="_blank">Yi Xin</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://gaopengcuhk.github.io/" target="_blank">Peng Gao</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://cemse.kaust.edu.sa/profiles/mohamed-elhoseiny" target="_blank">Mohamed Elhoseiny</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.ee.cuhk.edu.hk/~hsli/" target="_blank">Hongsheng Li</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">The Chinese University of Hong Kong<br>King Abdullah University of Science and Technology<br>Hugging Face<br>Shanghai AI Laboratory</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -82,7 +100,7 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+<!--                     <!-- Supplementary PDF link -->
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -91,7 +109,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -148,7 +166,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Recent text-to-image diffusion models achieve impressive visual quality through extensive scaling of training data and model parameters, yet they often struggle with complex scenes and fine-grained details. Inspired by the self-reflection capabilities emergent in large language models, we propose ReflectionFlow, an inference-time framework enabling diffusion models to iteratively reflect upon and refine their outputs. ReflectionFlow introduces three complementary inference-time scaling axes: (1) noise-level scaling to optimize latent initialization; (2) prompt-level scaling for precise semantic guidance, and most notably, (3) reflection-level scaling, which explicitly models actionable reflections to iteratively assess and correct previously generated images. To facilitate reflection-level scaling, we construct GenRef, a large-scale dataset comprising 800K triplets, each containing a reflection, a flawed image, and an enhanced image. Leveraging this dataset, we efficiently fine-tune state-of-the-art diffusion transformers, FLUX.1-dev, by jointly modeling multimodal inputs within a unified framework. Experimental results show that ReflectionFlow significantly outperforms naive noise-level scaling methods, offering a scalable and compute-efficient solution toward higher-quality image synthesis on challenging tasks. All code, checkpoint, and dataset will be released soon.
           </p>
         </div>
       </div>
@@ -157,7 +175,22 @@
 </section>
 <!-- End paper abstract -->
 
-
+<!-- Paper Method -->
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Method</h2>
+            <div class="container">
+                <br>
+                <div class="item" align="center">
+                    <img src="https://storygpt-v.s3.amazonaws.com/static/images/main.png" width="800"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End paper method -->
+  
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
