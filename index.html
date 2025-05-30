@@ -272,7 +272,7 @@
 
   
       <div class="content has-text-justified">
-        <p>At inference time, the VLM parses a high-level task instruction into a sequence of step-level subgoals, …</p>
+        <p>At inference time, the VLM parses a high-level task instruction into a sequence of step-level subgoals, which are stored in a memory bank. The VLA continuously queries the active subgoal and executes corresponding low-level actions based on high-frequency visual observations. Concurrently, the VLM periodically attends to recent observations to monitor execution progress. Upon detecting subgoal completion or deviation, it updates the memory with the next subgoal or issues a refined instruction. This closed-loop coordination preserves temporal abstraction while ensuring reactive control, enabling robust and interpretable performance in long-horizon tasks.</p>
       </div>
       <!-- 下面保持原有的 framework 图 -->
       <figure class="has-text-centered">
@@ -283,21 +283,6 @@
       </figure>
     </div>
   </section>
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Hierarchical Planning & Execution Framework</h2>
-      <div class="content has-text-justified">
-        <p>At inference time, the VLM parses a high-level task instruction into a sequence of step-level subgoals, which are stored in a memory bank. The VLA continuously queries the active subgoal and executes corresponding low-level actions based on high-frequency visual observations. Concurrently, the VLM periodically attends to recent observations to monitor execution progress. Upon detecting subgoal completion or deviation, it updates the memory with the next subgoal or issues a refined instruction. This closed-loop coordination preserves temporal abstraction while ensuring reactive control, enabling robust and interpretable performance in long-horizon tasks.
-        </p>
-      </div>
-      <figure class="has-text-centered">
-        <img 
-          src="static/images/fig4.png" 
-          alt="Hierarchical Planning & Execution Framework" 
-          style="width:100%; height:auto;" />
-      </figure>
-    </div>
-  </section>  
 
   <!-- ==================== RESULTS ==================== -->
   <section class="section" id="results">
